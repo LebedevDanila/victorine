@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3F3F3F;
+}
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+.title span {
+    color: #e91e63;
+}
+.victorine {
+    width: 700px;
+    min-height: 400px;
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 25px;
+    transition: 1.2s all ease;
+}
+.victorine__question {
+    font-size: 29px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ffffff5e;
+}
+.victorine__answers {
+    padding: 40px 0;
+}
+.victorine__answer {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+.victorine__answer:last-child {
+    margin-bottom: 0;
+}
+.victorine__answer button {
+    width: 23px;
+    height: 23px;
+    background: transparent;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    margin-right: 15px;
+    outline: none;
+}
+.victorine__answer button.active,
+.victorine__answer button:hover {
+    background: #fff;
+}
+.victorine__answer span {
+    font-size: 27px;
+}
+.victorine__submit {
+    width: 350px;
+    height: 45px;
+    background: #fbc02d;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 21px;
+    user-select: none;
+}
+.victorine__submit:focus,
+.victorine__submit:hover {
+    transition: 0.7s all ease;
+    background: #f9a825;
+}
+.victorine__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.victorine__dot {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.victorine__dot:not(:last-child):before {
+    content: '';
+    position: absolute;
+    right: -35px;
+    width: 27px;
+    border: 1.5px dashed #fff;
+}
+.victorine__dot.active {
+    background: #fff;
+    color: #3f3f3f;
+}
+.victorine__dot:last-child {
+    margin-right: 0;
+}
